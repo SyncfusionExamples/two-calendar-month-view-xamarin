@@ -34,6 +34,9 @@ https://www.syncfusion.com/kb/11862/how-to-display-two-xamarin-forms-calendar-mo
                                 Grid.Row="1"
                                 DataSource="{Binding Appointments}"
                                 NavigationDirection="Vertical">
+                  <calendar:SfCalendar.MonthViewSettings>
+                               <calendar:MonthViewSettings DayHeight="0"/>
+                 </calendar:SfCalendar.MonthViewSettings>
         </calendar:SfCalendar>
     </Grid>
     <ContentPage.BindingContext>
